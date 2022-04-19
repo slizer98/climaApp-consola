@@ -87,9 +87,11 @@ const listarLugares = async(lugares = []) => {
             choices
         }
     ];
-    
+    // salir con 0 
     const {id} = await inquirer.prompt(preguntas);
     return id;
+    
+   
 }
 
 const confirmar = async(message) => {
